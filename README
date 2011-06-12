@@ -7,10 +7,12 @@ USAGE
         $ PERL5LIB=~/some/odd/path perl-which All::Your::Base
 
 DESCRIPTION
-       "perl-which" works much like the venerable "which" command but for finding Perl modules.
+       "perl-which" works much like the venerable "which" command
+       but for finding Perl modules.
 
-       Matches are reported on stdout.  By default, it reports all matches, one per line, in the same order as
-       @INC.  If no matches are found, nothing is written to stdout.
+       Matches are reported on stdout.  By default, it reports all
+       matches, one per line, in the same order as @INC.  If no
+       matches are found, nothing is written to stdout.
 
 WHY?
        Because using "perldoc -l Foo" doesn't always work:
@@ -33,5 +35,5 @@ AUTHOR
        Richard W. Norton, <rwtnorton@gmail.com>
 
 LICENSE
-       This library is free software; you can redistribute it and/or modify it under the same terms as Perl
-       itself.
+       This library is free software; you can redistribute it and/or
+       modify it under the same terms as Perl itself.
