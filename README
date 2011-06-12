@@ -1,0 +1,37 @@
+NAME
+       perl-which - locate a Perl module in the user's @INC
+
+USAGE
+        $ perl-which Some::Perl::Module
+        $ perl-which Some::Perl::Module Pure::AwesomeSauce Epic::Fail
+        $ PERL5LIB=~/some/odd/path perl-which All::Your::Base
+
+DESCRIPTION
+       "perl-which" works much like the venerable "which" command but for finding Perl modules.
+
+       Matches are reported on stdout.  By default, it reports all matches, one per line, in the same order as
+       @INC.  If no matches are found, nothing is written to stdout.
+
+WHY?
+       Because using "perldoc -l Foo" doesn't always work:
+
+       o   when the module doesn't have POD
+
+       o   when the author separates the POD into its own file
+
+       And I have to make sure it isn't "-L" instead.
+
+       Besides, that isn't really what "perldoc" is for, right?
+
+DEPENDENCIES
+       Path::Class
+
+BUGS
+       None so far.
+
+AUTHOR
+       Richard W. Norton, <rwtnorton@gmail.com>
+
+LICENSE
+       This library is free software; you can redistribute it and/or modify it under the same terms as Perl
+       itself.
